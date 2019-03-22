@@ -9,7 +9,6 @@ module.exports = {
         element.submit();
     },
     navigateToPage: function (page) {
-
     },
     init: function (core) {
         this.driver = core.driver;
