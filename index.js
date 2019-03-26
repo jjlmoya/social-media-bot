@@ -1,15 +1,11 @@
-const Driver = require('./configuration/driver');
-const Selenium = require('selenium-webdriver');
-const Load = require('./configuration/loadModule');
-const Google = Load('../service/googleService', {
-    driver: Driver,
-    selenium: Selenium
-});
-(function () {
-    var init = function () {
-        Google.search('¿Qué tal?');
-    };
-    init();
-})();
+const puppeteer = require('puppeteer');
+let MuchoViaje = require('./services/muchoviajeService');
 
-Driver.close();
+
+(function () {
+    (async () => {
+        const browser = await puppeteer.launch({headless: false});
+        const page = await browser.newPage();
+        //await browser.close();
+    })();
+})();

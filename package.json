@@ -1,16 +1,14 @@
 {
-  "name": "selenium-bot",
+  "name": "social-puppet-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "chromedriver": "^2.12.0",
-    "selenium-webdriver": "^2.44.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jjlmoya",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer": "^1.13.0"
+  }
 }
